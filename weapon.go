@@ -1,5 +1,7 @@
 package MyFunc
 
+import "fmt"
+
 type WeaponValue struct {
 	weapon_type      string
 	scalingVal       string
@@ -58,5 +60,6 @@ func (i Inventory) InitializeInv(Player_inv *Inventory) {
 	var droppedWeapon WeaponValue
 	droppedWeapon.New(&droppedWeapon)
 	Player_inv.weapons = append(Player_inv.weapons, droppedWeapon)
+	fmt.Println(Player_inv.weapons)
 
 }
