@@ -53,3 +53,10 @@ func (v WeaponValue) New(droppedWeapon *WeaponValue) {
 	droppedWeapon.str_scaling = "C"
 
 }
+
+func (i Inventory) InitializeInv(Player_inv *Inventory) {
+	var droppedWeapon MyFunc.WeaponValue
+	droppedWeapon.New(&droppedWeapon)
+	Player_inv.weapons = append(Player_inv.weapons, droppedWeapon)
+
+}
