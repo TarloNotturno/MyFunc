@@ -1,3 +1,3 @@
-module github.com/TarloNotturno/GO/MyFunc
+module github.com/TarloNotturnoMyFunc
 
 go 1.22.4
