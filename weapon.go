@@ -55,7 +55,7 @@ func (v WeaponValue) New(droppedWeapon *WeaponValue) {
 }
 
 func (i Inventory) InitializeInv(Player_inv *Inventory) {
-	var droppedWeapon MyFunc.WeaponValue
+	var droppedWeapon WeaponValue
 	droppedWeapon.New(&droppedWeapon)
 	Player_inv.weapons = append(Player_inv.weapons, droppedWeapon)
 
